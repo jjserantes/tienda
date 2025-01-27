@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 form {
@@ -16,13 +17,22 @@ form {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
+    text-align: center;
+}
+
+form h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #333;
+    color: #555;
+    text-align: left;
 }
 
 input[type="text"],
@@ -61,4 +71,50 @@ input[type="submit"]:hover {
 
 input::placeholder {
     color: #999;
+}
+
+/* Estilos para el mensaje de error */
+form p {
+    color: #ff0000;
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño para el mensaje de error */
+    margin-top: 1rem;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    form h1 {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+    }
+
+    form h1 {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
 }
