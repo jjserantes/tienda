@@ -30,14 +30,12 @@ if (isset($_SESSION["username"])) {
         <main>
             <aside>
                 <ul>
-                    <li><a href="tienda">Inicio</a></li>
-                    <li><a href="proveedores">Proveedores</a></li>
-                    <li><a href="clientes">Clientes</a></li>
-                    <li><a href="categorias">Categorias</a></li>
-                    <li><a href="productos">Productos</a></li>
-                    <li><a href="ventas">Ventas</a></li>
-                    
-
+                    <li><a href="tienda"><i class="fa-solid fa-store"></i>Inicio</a></l>
+                    <li><a href="proveedores"><i class="fa-solid fa-boxes-packing"></i>Proveedores</a></li>
+                    <li><a href="clientes"><i class="fa-solid fa-users"></i>Clientes</a></li>
+                    <li><a href="categorias"><i class="fa-solid fa-list"></i>Categorias</a></li>
+                    <li><a href="productos"><i class="fa-solid fa-box"></i>Productos</a></li>
+                    <li><a href="ventas">Ventas<i class="fa-solid fa-cash-register"></i></a></li>
                 </ul>
             </aside>
         </main>
